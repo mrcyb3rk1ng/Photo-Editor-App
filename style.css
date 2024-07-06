@@ -1,0 +1,134 @@
+body{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+  background-image: url("bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+}
+
+.heding{
+  background: linear-gradient(to right, #D610FF, #7C10FF);
+  padding: 5px 0;
+  margin-bottom: -2px;
+}
+
+h1{
+  color: #FCFAFF;
+  margin: 10px 0;
+  font-size: 30px;
+}
+
+.selectTypeParent{
+  height: 60px;
+  width: 100%;
+  background: linear-gradient(to right, #D610FF, #7C10FF);
+  text-align: center;
+  align-content: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 10px 20px;
+}
+
+select{
+  width: 80%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  padding: 0 10px;
+  font-size: 15px;
+  background-color: #FCFAFF;
+}
+
+select:focus{
+  outline: none;
+}
+
+#saveBtn{
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #FCFAFF;
+  border-radius: 10px;
+}
+
+#insertImg{
+  display: none;
+}
+
+#dragDropIcon{
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  border: 2px dotted darkgray;
+  background-color: #FCFAFF;
+  opacity: 50%;
+  margin: 50px auto;
+  align-content: center;
+  font-size: 30px;
+  position: absolute;
+  top: 75px;
+  left: 125px;
+}
+
+
+.imgContainer{
+  height: fit-content;
+  width: fit-content;
+  margin:30px auto;
+  position: relative;
+}
+
+#img{
+  height: 350px;
+  width: 350px;
+  object-fit: fill;
+}
+
+#range {
+  -webkit-appearance: none;
+  background-color: #ddd;
+  border: none;
+  border-radius: 20px;
+  width: 80%;
+  height: 25px;
+  overflow: hidden;
+}
+
+#range::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 0px;
+  width: 0px;
+  border-radius: 50%;
+  box-shadow: -1200px 0 0 1200px #D610FF;
+}
+
+.footer{
+  width: 100%;
+  text-align: center;
+  align-content: center;
+  padding-top: 10px;
+  margin-top: 60px;
+  background: linear-gradient(to right, #D610FF, #7C10FF);
+}
+
+.footer p{
+  font-size: 12px;
+  margin-bottom: 20px;
+  color: #FCFAFF;
+}
+
+@media (min-width : 101vh){
+ .container{
+   height: auto;
+   max-height: 300vh;
+ }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <div class="container">
+    <div class="heding">
+      <h1>Photo Editor</h1>
+    </div>
+    <div class="selectTypeParent">
+       <select id="selectType">
+         <option value="none">None</option>
+         <option value="brightness">Brightness</option>
+         <option value="contrast">Contrast</option>
+         <option value="saturate">Saturation</option>
+         <option value="hue-rotate">Hue - Rotate</option>
+         <option value="grayScale">Gray Scale</option>
+         <option value="sepia">Sepia</option>
+         <option value="blur">Blur</option>
+         <option value="opacity">Opacity</option>
+       </select>
+       
+       <button id="saveBtn">Save</button>
+    </div>
+    
+    <div class="imgContainer">
+      <div id="dragDropIconParent">
+      
+        <input type="file" id="insertImg">
+        <label for="insertImg">
+          <div id="dragDropIcon">
+            +
+          </div>
+        </label>
+      
+      </div>
+      
+      <img id="img">
+    </div>
+    
+    <div class="selectTypeController">
+      <p class="rangeValue">0</p>
+      <input type="range" min="-100" max="200" value="100" step="1" id="range">
+    </div>
+    
+    <div class="footer">
+      <p>Copyright @2024 by Hijbullah Mohammad Suhaib <br> All rights reserved </p>
+    </div><div class="footer">
+      <p>Copyright @2024 by Hijbullah Mohammad Suhaib <br> All rights reserved </p>
+    </div>
+  </div>
+  
+  <!-- Project -->
+  <script src="main.js"></script>
+  
+</body>
+</html>
